@@ -30,9 +30,7 @@ public class ScriptManager {
 	@POST
 	@Path("script")
 	@Produces("text/plain")
-	public Response recognizeScript(@Context HttpHeaders header, String base64) throws IOException, ScriptException, TesseractException {
-		String type = header.getRequestHeader("type").get(0);
-		
+	public Response recognizeScript(String base64) throws IOException, ScriptException, TesseractException {
 		BufferedImage image = ScriptRecognition.decodeBase64(base64);
 		String script = ScriptRecognition.processImage(image);
 
