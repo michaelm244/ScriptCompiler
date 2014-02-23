@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="LaunchProject">
+    <wb-module deploy-name="Script Compiler">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/LaunchProject/build/classes"/>
-        <property name="context-root" value="LaunchProject"/>
+        <property name="java-output-path" value="/Script Compiler/build/classes"/>
+        <property name="context-root" value="Script Compiler"/>
     </wb-module>
 </project-modules>

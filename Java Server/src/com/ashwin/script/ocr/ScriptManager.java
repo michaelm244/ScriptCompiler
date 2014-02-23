@@ -35,12 +35,11 @@ public class ScriptManager {
 		
 		BufferedImage image = ScriptRecognition.decodeBase64(base64);
 		String script = ScriptRecognition.processImage(image);
-		Object obj = ScriptRecognition.evaluateScript(type, script);
 
 		ResponseBuilder builder = new ResponseBuilderImpl();
 		builder.header("content-type", "application/json");
 		builder.status(Response.Status.OK);
-		builder.entity(obj);
+		builder.entity(script);
 		return builder.build();
 	}
 	
