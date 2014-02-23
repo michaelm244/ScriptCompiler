@@ -1,0 +1,6 @@
+1) Import a Jersey template project
+2) Change the Project name
+3) Right click project -> Properties -> Web Project Settings and change Context Root to whatever you want
+4) Change web.xml package to point to your main class
+
+localhost:8080/ContextRoot/url-pattern/...
